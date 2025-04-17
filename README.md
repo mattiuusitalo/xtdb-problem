@@ -1,7 +1,24 @@
 # xtdb-problem
 
 Demonstrating a problem with using xtdb-core with the latest reitit
-libraries. Probably has to do with
+libraries.
+
+Can reproduce this by starting the repl and evaluating in the user namespace
+
+```
+(go)
+```
+
+You can see that the system launches normally if you comment the
+xtdb-core dependency and try again.
+
+You can test that the server is functioning by using
+
+```
+curl http://localhost:3333/api/foo -v
+```
+
+Probably has to do with conflicting dependency for Jetty
 
 ```
 metosin/reitit-middleware 0.8.0
