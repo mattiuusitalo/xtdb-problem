@@ -21,4 +21,7 @@
 
  :aliases
  {:dev
-  {:extra-paths ["src/dev"]}}}
+  {:jvm-opts ["--add-opens=java.base/java.nio=ALL-UNNAMED"
+              "-Dio.netty.tryReflectionSetAccessible=true"]
+
+   :extra-paths ["src/dev"]}}}
