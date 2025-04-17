@@ -2,6 +2,8 @@
 
 Demonstrating a problem with using xtdb-core with the latest reitit
 libraries. Probably has to do with
+
+```
 metosin/reitit-middleware 0.8.0
   X metosin/reitit-ring 0.8.0 :use-top
   . lambdaisland/deep-diff 0.0-47
@@ -350,10 +352,11 @@ com.xtdb/xtdb-core 2.0.0-beta6
     . org.abego.treelayout/org.abego.treelayout.core 1.0.3
     . com.ibm.icu/icu4j 72.1
   . org.antlr/antlr4-runtime 4.13.2
-
+```
 
 The stacktrace that is generated
 
+```
 2. Unhandled clojure.lang.ExceptionInfo
    Error on key :adapter/jetty when building system
    {:reason :integrant.core/build-threw-exception, :system {:web/routes #function[clojure.lang.AFunction/1]}, :function clojure.lang.MultiFn@614ba4cf, :key :adapter/jetty, :value {:port 3333, :routes #function[clojure.lang.AFunction/1]}}
@@ -486,3 +489,4 @@ ServletContextHandler.java:  278  org.eclipse.jetty.ee9.servlet.ServletContextHa
     interruptible_eval.clj:  101  nrepl.middleware.interruptible-eval/evaluator/run
                session.clj:  230  nrepl.middleware.session/session-exec/session-loop
         SessionThread.java:   21  nrepl.SessionThread/run
+```
