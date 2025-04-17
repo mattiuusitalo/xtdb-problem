@@ -1,0 +1,6 @@
+services:
+  db:
+    image: ghcr.io/xtdb/xtdb:2.0.0-beta6.6@sha256:c2f65f2e414310deba7e45839716d05d19953f3919edbd883fb04a674f28394f
+    ports:
+      - "127.0.0.1:5432:5432"
+      - "127.0.0.1:3000:3000"

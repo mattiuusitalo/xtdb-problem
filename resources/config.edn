@@ -1,0 +1,4 @@
+{:adapter/jetty {:port #or [#env "HTTP_PORT" 3333]
+                 :routes #ig/ref :web/routes}
+
+ :web/routes {}}
