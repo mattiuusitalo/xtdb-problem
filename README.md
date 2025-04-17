@@ -1,5 +1,8 @@
 # xtdb-problem
 
+2025-04-17 -- JUXT development team said that this is a known problem
+related to info.sunng/ring-jetty9-adapter
+
 Demonstrating a problem with using xtdb-core with the latest reitit
 libraries.
 
